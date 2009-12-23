@@ -4,7 +4,7 @@ require 'rubygems'
 require 'hoe'
 
 Hoe.spec 'omnifocus-rt' do
-  developer('aja', 'kushal@rubyforge.org')
+  developer('aja', 'kushali@rubyforge.org')
 
   self.rubyforge_name = 'seattlerb'
   extra_deps << 'omnifocus'
