@@ -17,11 +17,11 @@ uses the REST interface to RT.  More information about query formatting is
 available here: http://wiki.bestpractical.com/view/REST
 
 Example:
-:rt_url:   rt
-:queue:    QA
-:username: user
-:password: pass
-:query:    "Queue='QA'ANDOwner='Nobody'ANDStatus!='rejected'"
+    :rt_url:   rt
+    :queue:    QA
+    :username: user
+    :password: pass
+    :query:    "Queue='QA'ANDOwner='Nobody'ANDStatus!='rejected'"
 
 
 == FEATURES/PROBLEMS:
