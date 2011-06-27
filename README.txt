@@ -1,6 +1,7 @@
-= omnifocus_rt
+= omnifocus-rt
 
-* http://rubyforge.org/projects/seattlerb
+home :: https://github.com/seattlerb/omnifocus-rt
+rdoc :: http://seattlerb.rubyforge.org/omnifocus-rt
 
 == DESCRIPTION:
 
@@ -40,7 +41,7 @@ Example:
 
 (The MIT License)
 
-Copyright (c) 2009 Aja Hammerly
+Copyright (c) Aja Hammerly, seattle.rb
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
