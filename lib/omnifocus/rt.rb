@@ -4,27 +4,27 @@ module OmniFocus::Rt
   VERSION = '1.0.0'
   PREFIX  = "RM"
 
-   def load_or_create_rt_config
-     path   = File.expand_path "~/.omnifocus-rt.yml"
-     config = YAML.load(File.read(path)) rescue nil
+  def load_or_create_rt_config
+    path   = File.expand_path "~/.omnifocus-rt.yml"
+    config = YAML.load(File.read(path)) rescue nil
 
-     unless config then
-       config = {
-         :username => "USERNAME",
-         :password => "PASSWORD",
-         :rt_url   => "tickets.mysite.com",
-         :queue    => "MyQueue"
-       }
+    unless config then
+      config = {
+        :username => "USERNAME",
+        :password => "PASSWORD",
+        :rt_url   => "tickets.mysite.com",
+        :queue    => "MyQueue"
+      }
 
-       File.open(path, "w") { |f|
-         YAML.dump(config, f)
-       }
+      File.open(path, "w") { |f|
+        YAML.dump(config, f)
+      }
 
-       abort "Created default config in #{path}. Go fill it out."
-     end
+      abort "Created default config in #{path}. Go fill it out."
+    end
 
-     config
-   end
+    config
+  end
 
   def populate_rt_tasks
     config        = load_or_create_rt_config
