@@ -2,6 +2,7 @@ require 'open-uri'
 
 module OmniFocus::Rt
   VERSION = '1.0.0'
+  PREFIX  = "RM"
 
    def load_or_create_rt_config
      path   = File.expand_path "~/.omnifocus-rt.yml"
@@ -43,7 +44,7 @@ module OmniFocus::Rt
     lines.each do |line|
       bug_number = line[/(\d+):(.*)/, 1]
       next unless bug_number
-      ticket_id = "RT##{bug_number}"
+      ticket_id = "#{PREFIX}##{bug_number}"
 
       if existing[ticket_id] then
         project = existing[ticket_id]
