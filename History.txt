@@ -1,3 +1,8 @@
+=== 1.0.1 / 2011-07-11
+* 1 bug fix:
+
+  * Added PREFIX const for new filtering system
+
 === 1.0.0 / 2009-12-22
 
 * 1 major enhancement

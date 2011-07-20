@@ -1,7 +1,7 @@
 require 'open-uri'
 
 module OmniFocus::Rt
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
   PREFIX  = "RM"
 
   def load_or_create_rt_config
