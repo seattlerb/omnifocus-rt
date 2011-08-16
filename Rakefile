@@ -5,10 +5,11 @@ require 'hoe'
 
 Hoe.plugin :seattlerb
 
-Hoe.spec 'omnifocus-rt' do
-  developer('aja', 'kushali@rubyforge.org')
-
+s = Hoe.spec 'omnifocus-rt' do
+  developer 'aja', 'kushali@rubyforge.org'
   dependency "omnifocus", "~> 1.4"
 end
+
+s.rdoc_locations.reject! { |url| url =~ /rubyforge/ } # HACK
 
 # vim: syntax=ruby
