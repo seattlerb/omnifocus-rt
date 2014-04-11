@@ -9,8 +9,6 @@ s = Hoe.spec 'omnifocus-rt' do
   developer 'aja', 'kushali@rubyforge.org'
 
   dependency "omnifocus", "~> 2.0"
-
-  self.rubyforge_name = "seattlerb"
 end
 
 s.rdoc_locations.reject! { |url| url =~ /rubyforge/ } # HACK
