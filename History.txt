@@ -1,4 +1,16 @@
+=== 1.0.2 / 2015-05-07
+
+* 1 minor enhancement:
+
+  * Updated dependency to omnifocus 2.x
+
+* 2 bug fixes:
+
+  * Fixing the Rakefile so I can publish docs to rubyforge.
+  * Removed dead rubyforge setting in Rakefile
+
 === 1.0.1 / 2011-07-11
+
 * 1 bug fix:
 
   * Added PREFIX const for new filtering system
