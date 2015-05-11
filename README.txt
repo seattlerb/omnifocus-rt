@@ -18,6 +18,7 @@ uses the REST interface to RT.  More information about query formatting is
 available here: http://wiki.bestpractical.com/view/REST
 
 Example:
+
     :rt_url:   rt
     :queue:    QA
     :username: user
